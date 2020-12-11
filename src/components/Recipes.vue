@@ -1,12 +1,22 @@
 <template>
-  <div id="topnav">
-    <a>Recipes</a>
+  <div>
+    <div id="topnav">
+      <a>Recipes</a>
+    </div>
+    <RecipeCard/>
+    <RecipeCard/>
   </div>
 </template>
 
 <script>
+
+import RecipeCard from "@/components/RecipeCard";
+
 export default {
-  name: "Recipes"
+  name: "Recipes",
+  components: {
+    RecipeCard
+  }
 };
 </script>
 
