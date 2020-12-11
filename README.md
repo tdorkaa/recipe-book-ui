@@ -1,4 +1,6 @@
 # recipe-book-ui
+This project is the ui part.
+
 
 ## Project setup
 ```
