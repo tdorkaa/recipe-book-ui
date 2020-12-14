@@ -3,19 +3,21 @@
     <div id="topnav">
       <a>Recipes</a>
     </div>
-    <RecipeCard/>
-    <RecipeCard/>
+    <RecipeCard v-bind:recipe="recipe" />
   </div>
 </template>
 
 <script>
-
 import RecipeCard from "@/components/RecipeCard";
+import store from "../store";
 
 export default {
   name: "Recipes",
   components: {
     RecipeCard
+  },
+  computed: {
+    recipe: () => store.getters.getRecipes[0]
   }
 };
 </script>
